@@ -7,12 +7,6 @@ pcall(function() workspace.FallenPartsDestroyHeight = 0/0 end)
 workspace:GetPropertyChangedSignal("FallenPartsDestroyHeight"):Connect(function()
     pcall(function() workspace.FallenPartsDestroyHeight = 0/0 end)
 end)
-wait(2)
-
-if game.PlaceId ~= 2788229376 and game.PlaceId ~= 7213786345 then
-    game.Players.LocalPlayer:Kick("\n\nThis script only works on Da Hood!\n\nGame not supported.")
-    return
-end
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
